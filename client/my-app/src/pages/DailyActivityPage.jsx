@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Dropdown from "../components/Dropdown";
 
 function DailyActivityPage() {
-  const [selected, setSelected] = useState(""); // Define selected state
-  const [isActive, setIsActive] = useState(false); // Define isActive state
+  const [selected, setSelected] = useState("");
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="dropdown-container">

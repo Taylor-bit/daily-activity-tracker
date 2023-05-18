@@ -6,6 +6,7 @@ function RadioSelectInput ({onChange}) {
     onChange(selectedValue);
   };
   return (
+    // TODO: dynamically render options instead of hardcoding
     <div className="radio-select-input">
         <label htmlFor="multiple-choice">I am feeling:</label><br></br>
         <input type="radio" id="option1" name="multiple-choice" value="Happy" onChange={handleRadioChange}></input>

@@ -34,7 +34,6 @@ function ParentNotesPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
   };
 
   return (

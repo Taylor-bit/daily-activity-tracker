@@ -191,10 +191,12 @@ h3 {
 .parent-notes-field label {
   margin-bottom: 10px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 .parent-notes-field input {
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
@@ -202,15 +204,8 @@ h3 {
   background-color: #f9f9f9;
 }
 
-/* .parent-notes-form */
-/* .parent-notes-form {
-  padding-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-} */
-
 .parent-notes-form {
+  margin-top: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
@@ -220,7 +215,7 @@ h3 {
 .parent-notes-page {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* .profile-field */
@@ -233,6 +228,8 @@ h3 {
 .profile-field label {
   margin-bottom: 10px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-field input {
@@ -297,15 +294,17 @@ h3 {
 /* .review-content */
 .review-content {
   flex-grow: 1;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 /* .review-image */
 .review-image {
-  width: 60px;
+  display: flex;
+  width: 50px;
   height: 70px;
   border-radius: 50%;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* .review-text */

@@ -48,7 +48,7 @@ const WelcomeMessage = () => {
         <div className="review">
           <img
             className="review-image"
-            src="https://images.pexels.com/photos/5905444/pexels-photo-5905444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://images.pexels.com/photos/5905483/pexels-photo-5905483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Reviewer 3"
           />
           <div className="review-content">

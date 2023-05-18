@@ -4,6 +4,8 @@ import AudioInput from "./AudioInput";
 import VideoInput from "./VideoInput";
 import RadioSelectInput from "./RadioSelectInput";
 
+/* Define state that will be used to handle selection
+& submission of forms from Dropdown Menu */
 function Dropdown() {
   const [selected, setSelected] = useState("");
   const [isActive, setIsActive] = useState(false);
@@ -13,6 +15,9 @@ function Dropdown() {
   const [textInput, setTextInput] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  /* Options available for selection in Dropdown Menu 
+  & their corresponding value that determines which type
+  of form is rendered */
   const options = [
     { value: "text", label: "Tell me a short story" },
     { value: "audio", label: "Sing me a song" },
@@ -25,31 +30,36 @@ function Dropdown() {
     setIsActive(false);
     setIsSubmitted(false); // Reset isSubmitted state
   };
-  
 
+  // Use state to set value of radio selected option
   const handleRadioSelect = (value) => {
     setRadioSelected(value);
   };
 
+  // Use state to verify that an audio file was uploaded
   const handleAudioUpload = (event) => {
     const file = event.target.files[0];
     setAudioUploaded(!!file);
   };
 
+  // Use state to verify that a video file was uploaded
   const handleVideoUpload = (event) => {
     const file = event.target.files[0];
     setVideoUploaded(!!file);
   };
 
+  // Use state to set entered text as input value
   const handleTextInputChange = (event) => {
     setTextInput(event.target.value);
   };
 
+  // Use state to get the selected option label from Dropdown menu
   const getSelectedOptionLabel = () => {
     const selectedOption = options.find((option) => option.value === selected);
     return selectedOption ? selectedOption.label : "Select an option";
   };
 
+  // Rendering of different input forms based on selected activity
   const renderActivityComponent = () => {
     switch (selected) {
       case "text":
@@ -101,12 +111,14 @@ function Dropdown() {
     return false;
   };
 
+  // If the form is submitted reset the form and update the title
   const handleFormSubmit = () => {
     setIsSubmitted(true);
     resetForm();
     document.getElementById("title").textContent = "Would you like to complete another activity?";
   };
 
+  // Reset useState values
   const resetForm = () => {
     setSelected("");
     setRadioSelected("");

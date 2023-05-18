@@ -17,7 +17,7 @@ function LeftNavBar() {
         <NavLink to="/daily-activity" exact activeClassName="active">Daily Activity</NavLink>
       </li>
       <li>
-        <NavLink to="/previous-activities" exact activeClassName="active">Previous Activities</NavLink>
+        <NavLink to="/random-activity" exact activeClassName="active">Random Activity</NavLink>
       </li>
       <li>
         <NavLink to="/parent-notes" exact activeClassName="active">Parent Notes</NavLink>
