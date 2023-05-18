@@ -5,12 +5,12 @@ function TextInput({ value, onChange }) {
     <div className="text-input">
       <label htmlFor="textInput">Your Typed Response:</label>
       <br />
-      <input
-        type="text"
+      <textarea
         id="textInput"
         value={value}
         onChange={onChange}
-      />
+        rows="4"
+      ></textarea>
       <br />
     </div>
   );

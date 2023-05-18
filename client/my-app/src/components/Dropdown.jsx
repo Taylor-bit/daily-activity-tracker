@@ -120,7 +120,7 @@ function Dropdown() {
       <div className="dropdown-btn" onClick={() => setIsActive(!isActive)}>
         {getSelectedOptionLabel()}
         <span className="fas fa-caret-down">&#9660;</span>
-        </div>
+      </div>
       {isActive && (
         <div className="dropdown-content">
           {options.map((option) => (
@@ -135,16 +135,18 @@ function Dropdown() {
         </div>
       )}
       {renderActivityComponent()}
-      {selected && (
-        <button
-          className="submit-button"
-          disabled={isSubmitDisabled()}
-          onClick={handleFormSubmit}
-        >
-          <span className="submit-button-icon">▶</span>
-          Submit
-        </button>
-      )}
+      <div className="submit-button-container">
+        {selected && (
+          <button
+            className="submit-button"
+            disabled={isSubmitDisabled()}
+            onClick={handleFormSubmit}
+          >
+            <span className="submit-button-icon">▶</span>
+            Submit
+          </button>
+        )}
+      </div>
       {isSubmitted && (
         <div className="message">
           Great job completing your daily activity!

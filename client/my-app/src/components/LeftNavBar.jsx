@@ -6,7 +6,9 @@ function LeftNavBar() {
     <div className="left-nav-bar">
     <ul>
       <li>
-        <NavLink to="/" exact activeClassName="active">Home</NavLink>
+        <NavLink to="/" exact activeClassName="active">
+          Home
+        </NavLink>
       </li>
       <li>
         <NavLink to="/profile" activeClassName="active">Profile</NavLink>

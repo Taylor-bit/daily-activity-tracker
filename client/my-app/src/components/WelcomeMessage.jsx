@@ -16,7 +16,7 @@ const WelcomeMessage = () => {
         <div className="review">
           <img
             className="review-image"
-            src="https://images.app.goo.gl/5znR6S91J1yKTxP9A"
+            src="https://images.pexels.com/photos/5407253/pexels-photo-5407253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Reviewer 1"
           />
           <div className="review-content">
@@ -32,7 +32,7 @@ const WelcomeMessage = () => {
         <div className="review">
           <img
             className="review-image"
-            src="https://example.com/reviewer2.jpg"
+            src="https://images.pexels.com/photos/5867737/pexels-photo-5867737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Reviewer 2"
           />
           <div className="review-content">
@@ -48,7 +48,7 @@ const WelcomeMessage = () => {
         <div className="review">
           <img
             className="review-image"
-            src="https://example.com/reviewer3.jpg"
+            src="https://images.pexels.com/photos/5905444/pexels-photo-5905444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Reviewer 3"
           />
           <div className="review-content">

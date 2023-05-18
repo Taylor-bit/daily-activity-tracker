@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 
 function ParentNotesPage() {
+  const [activityDate, setActivityDate] = useState("");
   const [activityName, setActivityName] = useState("");
   const [activitySummary, setActivitySummary] = useState("");
   const [childEngagement, setChildEngagement] = useState("");
   const [childEnjoyment, setChildEnjoyment] = useState("");
   const [parentFeedback, setParentFeedback] = useState("");
+
+  const handleActivityDateChange = (event) => {
+    setActivityDate(event.target.value);
+  };
 
   const handleActivityNameChange = (event) => {
     setActivityName(event.target.value);
@@ -46,6 +51,15 @@ function ParentNotesPage() {
           />
         </div>
         <div className="parent-notes-field">
+          <label htmlFor="activityDate">Date Activity Completed:</label>
+          <input
+            type="text"
+            id="activityDate"
+            value={activityDate}
+            onChange={handleActivityDateChange}
+          />
+        </div>
+        <div className="parent-notes-field">
           <label htmlFor="activitySummary">Activity Summary:</label>
           <input
             type="text"
@@ -81,10 +95,12 @@ function ParentNotesPage() {
             onChange={handleParentFeedbackChange}
           />
         </div>
-        <button className="submit-button" type="submit">
-          <span className="submit-button-icon">▶</span>
-          Submit
-        </button>
+        <div className="submit-button-container">
+          <button className="submit-button" type="submit">
+            <span className="submit-button-icon">▶</span>
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );  
