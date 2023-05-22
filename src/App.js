@@ -1,6 +1,6 @@
 import "./styles.css";
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LeftNavBar from "./components/LeftNavBar";
 import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
@@ -10,7 +10,7 @@ import ParentNotesPage from "./pages/ParentNotesPage";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/daily-activity-tracker">
       <div className="container">
         <LeftNavBar />
         <div className="content-container">
@@ -23,7 +23,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
