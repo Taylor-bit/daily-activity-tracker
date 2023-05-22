@@ -8,7 +8,7 @@ import DailyActivityPage from "./pages/DailyActivityPage";
 import RandomActivityPage from "./pages/RandomActivityPage";
 import ParentNotesPage from "./pages/ParentNotesPage";
 
-export default function App() {
+function App() {
   return (
     <Router>
       <div className="container">
@@ -26,3 +26,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default App;

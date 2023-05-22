@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ProfilePage() {
+function ProfilePage() {
   return (
     <div className="profile-page">
       <h2>Profile Page</h2>
@@ -25,3 +25,5 @@ export default function ProfilePage() {
     </div>
   );
 }
+
+export default ProfilePage;

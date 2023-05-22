@@ -7,7 +7,7 @@ function DailyActivityPage() {
 
   return (
     <div className="dropdown-container">
-      <h2 id={"title"} style={{ textAlign: "center" }}>Welcome To Your Daily Activity!</h2>
+      <h2 id={"title"} style={{ textAlign: "center" }}>Welcome to your daily activity!</h2>
       <Dropdown selected={selected} setSelected={setSelected} setIsActive={setIsActive} />
     </div>
   );

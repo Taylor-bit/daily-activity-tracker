@@ -28,7 +28,7 @@ function Dropdown() {
   const handleOptionClick = (option) => {
     setSelected(option.value);
     setIsActive(false);
-    setIsSubmitted(false); // Reset isSubmitted state
+    setIsSubmitted(false);
   };
 
   // Use state to set value of radio selected option
@@ -59,7 +59,7 @@ function Dropdown() {
     return selectedOption ? selectedOption.label : "Select an option";
   };
 
-  // Rendering of different input forms based on selected activity
+  // Dynamic rendering of different input forms based on selected activity
   const renderActivityComponent = () => {
     switch (selected) {
       case "text":
