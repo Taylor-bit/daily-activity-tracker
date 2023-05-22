@@ -15,11 +15,11 @@ function App() {
         <LeftNavBar />
         <div className="content-container">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/daily-activity" element={<DailyActivityPage />} />
-            <Route path="/random-activity" element={<RandomActivityPage />} />
-            <Route path="/parent-notes" element={<ParentNotesPage />} />
+            <Route path="/daily-activity-tracker/" element={<HomePage />} />
+            <Route path="/daily-activity-tracker/profile" element={<ProfilePage />} />
+            <Route path="/daily-activity-tracker/daily-activity" element={<DailyActivityPage />} />
+            <Route path="/daily-activity-tracker/random-activity" element={<RandomActivityPage />} />
+            <Route path="/daily-activity-tracker/parent-notes" element={<ParentNotesPage />} />
           </Routes>
         </div>
       </div>
